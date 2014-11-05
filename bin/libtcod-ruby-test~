@@ -331,7 +331,7 @@ until TCOD.console_is_window_closed()
  #render the screen
  render_all()
  
- TCOD::System.flush
+ TCOD::System.console_flush()
  
  #erase all objects at their old locations, before they move
  $objects.each do |object|

@@ -63,6 +63,8 @@ module TCOD
       TCOD.console_print_rect_ex(@ptr, x, y, w, h, bkgnf_flag, alignment, fmt, *args)
     end
 
+    def flush; TCOD.console_flush; end
+
     def check_for_keypress(flags=TCOD::KEY_PRESSED); TCOD.console_check_for_keypress(flags); end
     def wait_for_keypress(flush=false); TCOD.console_wait_for_keypress(flush); end
     def key_pressed?(keycode); TCOD.console_is_key_pressed(keycode); end
