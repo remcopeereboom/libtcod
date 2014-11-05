@@ -300,8 +300,8 @@ TCOD.sys_set_fps(LIMIT_FPS)
 $con = TCOD.console_new(SCREEN_WIDTH, SCREEN_HEIGHT)
 
 
-TCOD.console_map_ascii_codes_to_font(256, 32, 0, 5)  #$map all characters in 1st row
-TCOD.console_map_ascii_codes_to_font(256+32, 32, 0, 6)  #$map all characters in 2nd row
+TCOD::System.map_ascii_codes_to_font(256, 32, 0, 5)  #$map all characters in 1st row
+TCOD::System.map_ascii_codes_to_font(256+32, 32, 0, 6)  #$map all characters in 2nd row
 
 
 #create object representing the $player
