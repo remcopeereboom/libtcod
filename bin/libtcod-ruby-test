@@ -295,7 +295,8 @@ end
 
 #note that we must specify the number of tiles on the font, which was enlarged a bit
 TCOD::System.set_custom_font(File.join(File.dirname(__FILE__), 'oryx_tiles.png'), TCOD::FONT_TYPE_GREYSCALE | TCOD::FONT_LAYOUT_TCOD, 32, 12)
-TCOD.console_init_root(SCREEN_WIDTH, SCREEN_HEIGHT, 'python/TCOD tutorial', false, TCOD::RENDERER_SDL)
+# TCOD.console_init_root(SCREEN_WIDTH, SCREEN_HEIGHT, 'python/TCOD tutorial', false, TCOD::RENDERER_SDL)
+TCOD::System.initialize(SCREEN_WIDTH, SCREEN_HEIGHT)
 TCOD.sys_set_fps(LIMIT_FPS)
 $con = TCOD.console_new(SCREEN_WIDTH, SCREEN_HEIGHT)
 

@@ -1,6 +1,6 @@
 module TCOD
   class Console
-    attr_reader :width, :height, :ptr
+    attr_accessor :width, :height, :ptr
 
     def self.root
       @root ||= TCOD::RootConsole.new

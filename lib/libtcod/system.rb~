@@ -9,6 +9,8 @@ module TCOD
       @window_width = width
       @window_height = height
       @title = title
+      Console.root.width = width
+      Console.root.height = height
     end
 
     def self.window_width
