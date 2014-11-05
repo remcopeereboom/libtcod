@@ -1,0 +1,9 @@
+module TCOD
+  class RootConsole < Console
+    def initialize(width, height)
+      @width = width
+      @height = height
+      @ptr = nil
+    end
+  end
+end

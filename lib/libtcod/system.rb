@@ -34,7 +34,7 @@ module TCOD
     end
 
     def self.map_ascii_codes_to_font(asciiCode, nbCodes, fontCharX, fontCharY)
-      TCOD.console_map_ascii_code_to_font(asciiCode.ord, nbCodes, fontCharX, fontCharY)
+      TCOD.console_map_ascii_codes_to_font(asciiCode.ord, nbCodes, fontCharX, fontCharY)
     end
 
     def self.flush
